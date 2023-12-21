@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../output/main.css">
+    <title>Matematika</title>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Sakums</a></li>
+                    <li><a href="index.html">Matematika</a></li>
+                    <li>Latviešu</li>
+                    <li><a href="../Eng/indexEng.html">English</a></li>
+                    <li>Русский</li>
+                    <li></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="flex-center top-10">
+            <div>
+                <button id="math-number-one-btn">Uzdevums 1</button>
+                <button id="math-number-two-btn">Uzdevums 2</button>
+                <button id="math-number-three-btn">Uzdevums 3</button>
+            </div>
+        </section>
+        <section id="resultmathAnswer" class="result-open flex-colum">
+            <div class="Task-place flex-colum">
+                <h3 id="result-math-one"></h3>
+                <h3 id="result-math-two"></h3>
+                <h4 id="timeDown"></h4>
+            </div>
+            <div class="flex-colum">
+                <img class="bot-10" id="result-gif" src="" alt="randome image">
+            </div>
+        </section>
+        <section id="math-number-one">
+            <div class="result-score flex-colum">
+                <div class="result-score top-10">
+                    <label class="font-25" for="">Pareizi atbilde: </label>
+                    <h2 class="left-10" id="correcrAnswersCountMats">
+                    </h2>
+                </div>
+                <div class="result-score top-10">
+                    <label class="font-25" for="">Cik uzdevumi bija vispar: </label>
+                    <h2 class="left-10" id="totalAttemptsCountMats">
+                    </h2>
+                </div>
+            </div>
+            <div class="Task-place-math Task-place" id="Task-math-one">
+            </div>
+            <div class="Task-result-math">
+                <label for="">Jusa atbilde:</label>
+                <input id="answer-math-one" class="answer-math" type="number" placeholder="atbilde">
+            </div>
+        </section>
+        <section id="math-number-two">
+            <div class="result-score flex-colum">
+                <div class="result-score top-10">
+                    <label class="font-25" for="">Pareizi atbilde: </label>
+                    <h2 class="left-10" id="correcrAnswersCountMats">
+                    </h2>
+                </div>
+                <div class="result-score top-10">
+                    <label class="font-25" for="">Cik uzdevumi bija vispar: </label>
+                    <h2 class="left-10" id="totalAttemptsCountMats">
+                    </h2>
+                </div>
+            </div>
+            <div class="Task-place-math Task-place" id="Task-math-two">
+            </div>
+            <div class="Task-result-math flex-colum">
+                <label for="">Jūsu lēmums:</label>
+                <input class="margin-10 answer-math" type="text" placeholder="1+2+3=6">
+                <label for="">Jūsu atbilde:</label>
+                <textarea name="" id="answer-math-two" id="userExample" cols="30" rows="5" placeholder="Всего было 6 детей"></textarea>
+                <button id="submitAnswer" >Atbildet</button>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<script type="module" src="../js/math.js"></script>
+<script type="module" src="../js/index.js"></script>
+<script src="../output/main.js"></script>
+</html>
