@@ -1,29 +1,29 @@
 import { generationMathExampleTwo } from "./math-example-two.js";
 import { generationMathExample } from "./math-example-one.js";
 
-const answerMathOne = document.querySelector("#answer-math-one");
-const answerElements = document.querySelectorAll(".answer-math")
+// const answerMathOne = document.querySelector("#answer-math-one");
+const answerElements = document.querySelectorAll(".answer-math");
 const resultMathOne = document.querySelector("#result-math-one");
 const resultMathTwo = document.querySelector("#result-math-two");
-const resultGif = document.getElementById("result-gif")
-let timeDown = document.querySelector("#timeDown")
-const resultmathAnswer = document.getElementById("resultmathAnswer")
+const resultGif = document.getElementById("result-gif");
+let timeDown = document.querySelector("#timeDown");
+const resultmathAnswer = document.getElementById("resultmathAnswer");
 
 const correctAnswersCountMath = document.querySelector("#correcrAnswersCountMats");
 const totalAttemptsCountMath = document.querySelector("#totalAttemptsCountMats");
 
-const mathNumberOne = document.querySelector("#math-number-one")
-const mathNumberOneBtn = document.querySelector("#math-number-one-btn")
-const mathNumberTwoBtn = document.querySelector("#math-number-two-btn")
-const mathNumberTwo = document.querySelector("#math-number-two")
+const mathNumberOne = document.querySelector("#math-number-one");
+const mathNumberOneBtn = document.querySelector("#math-number-one-btn");
+const mathNumberTwoBtn = document.querySelector("#math-number-two-btn");
+const mathNumberTwo = document.querySelector("#math-number-two");
 
 mathNumberOneBtn.addEventListener("click", () =>{
     mathNumberOne.classList.toggle("open")
-})
+});
 
 mathNumberTwoBtn.addEventListener("click", () =>{
     mathNumberTwo.classList.toggle("open")
-})
+});
 
 let correcrAnswersCount = 0;
 let totalAttemptsCount = 0;
@@ -46,7 +46,7 @@ const gifsYes = [
     "../gif/VJKc.gif",
     "../gif/WXxX.gif",
     "../gif/xz.gif"
-]
+];
 
 const gifNo = [
     "../gif/OhNo/1EM9.gif",
@@ -64,7 +64,7 @@ const gifNo = [
     "../gif/OhNo/Mw74.gif",
     "../gif/OhNo/SOog.gif",
     "../gif/OhNo/Z9Jz.gif"
-]
+];
 
 document.addEventListener("DOMContentLoaded", function() {
     generationMathExample();
@@ -100,7 +100,7 @@ function formatTime(second){
 
 function showRandomImageYes(){
     const randomIndex = Math.floor(Math.random() * gifsYes.length);
-    const selectedImage = gifsYes[randomIndex]
+    const selectedImage = gifsYes[randomIndex];
 
     resultGif.src = selectedImage;
     resultGif.style.display = "flex";
@@ -109,7 +109,7 @@ function showRandomImageYes(){
 
 function showRandomImageNo(){
     const randomIndex = Math.floor(Math.random() * gifNo.length);
-    const selectedImage = gifNo[randomIndex]
+    const selectedImage = gifNo[randomIndex];
 
     resultGif.src = selectedImage;
     resultGif.style.display = "flex";
@@ -120,7 +120,7 @@ function hideGif(){
 }
 
 function hideTime(){
-    timeDown.style.display = "none"
+    timeDown.style.display = "none";
 }
 
 function setupEventListener(){

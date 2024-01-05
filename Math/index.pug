@@ -1,0 +1,65 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' type='text/css' href='../dist/main.css')
+    title Matematika
+  body
+    header
+      div
+        nav
+          ul
+            li
+              a(href='../index.html') Sakums
+            li
+              a(href='index.html') Matematika
+            li Latviešu
+            li
+              a(href='../Eng/indexEng.html') English
+            li Русский
+            li
+    main
+      section.flex-center.top-10
+        div
+          button#math-number-one-btn Uzdevums 1
+          button#math-number-two-btn Uzdevums 2
+          button#math-number-three-btn Uzdevums 3
+      section#resultmathAnswer.result-open.flex-colum
+        .Task-place.flex-colum
+          h3#result-math-one
+          h3#result-math-two
+          h4#timeDown
+        .flex-colum
+          img#result-gif.bot-10(src='' alt='randome image')
+      section#math-number-one
+        .result-score.flex-colum
+          .result-score.top-10
+            label.font-25(for='') Pareizi atbilde: 
+            h2#correcrAnswersCountMats.left-10
+          .result-score.top-10
+            label.font-25(for='') Cik uzdevumi bija vispar: 
+            h2#totalAttemptsCountMats.left-10
+        #Task-math-one.Task-place-math.Task-place
+        .Task-result-math
+          label(for='') Jusa atbilde:
+          input#answer-math-one.answer-math(type='number' placeholder='atbilde')
+      section#math-number-two
+        .result-score.flex-colum
+          .result-score.top-10
+            label.font-25(for='') Pareizi atbilde: 
+            h2#correcrAnswersCountMats.left-10
+          .result-score.top-10
+            label.font-25(for='') Cik uzdevumi bija vispar: 
+            h2#totalAttemptsCountMats.left-10
+        #Task-math-two.Task-place-math.Task-place
+        .Task-result-math.flex-colum
+          label(for='') Jūsu lēmums:
+          input.margin-10.answer-math(type='text' placeholder='1+2+3=6')
+          label(for='') Jūsu atbilde:
+          textarea#answer-math-two(name='' cols='30' rows='5' placeholder='Всего было 6 детей')
+          button#submitAnswer Atbildet
+    footer
+    script(type='module' src='../js/math.js')
+    script(type='module' src='../js/index.js')
+    script(src='../dist/main.js')
